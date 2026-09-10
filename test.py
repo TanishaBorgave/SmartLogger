@@ -1,0 +1,1 @@
+print("SmartLog environment is working!")

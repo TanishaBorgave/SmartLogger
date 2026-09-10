@@ -1,0 +1,5 @@
+smartlog_env/
+__pycache__/
+*.pyc
+data/*.db
+.DS_Store
