@@ -1,500 +1,500 @@
-2026-09-11 00:00:00.000 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=57
-2026-09-11 00:00:00.077 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=81
-2026-09-11 00:00:01.061 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=80
-2026-09-11 00:00:01.279 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:00:01.448 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:00:01.573 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=301
-2026-09-11 00:00:01.694 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=67
-2026-09-11 00:00:02.621 | WARN | APIGateway | HIGH_LATENCY | API request latency exceeded expected threshold | value=120
-2026-09-11 00:00:03.473 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=35
-2026-09-11 00:00:04.645 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=35
-2026-09-11 00:00:05.359 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:00:05.947 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:00:06.275 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=36
-2026-09-11 00:00:06.540 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:00:06.653 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=37
-2026-09-11 00:00:07.758 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:00:07.819 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=69
-2026-09-11 00:00:07.978 | ERROR | APIGateway | HIGH_LATENCY | API request latency exceeded expected threshold | value=222
-2026-09-11 00:00:08.430 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=57
-2026-09-11 00:00:09.290 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:00:12.067 | WARN | AuthService | TOKEN_EXPIRED | Authentication token expired
-2026-09-11 00:00:12.088 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=388
-2026-09-11 00:00:12.149 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:00:12.269 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=34
-2026-09-11 00:00:12.292 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:00:12.593 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:00:13.382 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=65
-2026-09-11 00:00:13.877 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=121
-2026-09-11 00:00:13.878 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=256
-2026-09-11 00:00:14.387 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:00:14.531 | WARN | APIGateway | REQUEST_BAD | API request contained invalid data
-2026-09-11 00:00:14.560 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=127
-2026-09-11 00:00:14.917 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:00:15.795 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=355
-2026-09-11 00:00:15.927 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:00:16.086 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:00:16.167 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:00:16.321 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:00:16.549 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=30
-2026-09-11 00:00:16.947 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:00:18.545 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=89
-2026-09-11 00:00:18.765 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:00:19.500 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:00:19.697 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=44
-2026-09-11 00:00:19.848 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:00:20.038 | ERROR | SystemService | HIGH_CPU | CPU utilization exceeded expected level | value=90
-2026-09-11 00:00:20.462 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=102
-2026-09-11 00:00:20.754 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:00:20.783 | INFO | APIGateway | HIGH_LATENCY | API request latency exceeded expected threshold | value=42
-2026-09-11 00:00:21.094 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:00:21.222 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=69
-2026-09-11 00:00:21.748 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=29
-2026-09-11 00:00:22.016 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=74
-2026-09-11 00:00:22.864 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:00:24.250 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=83
-2026-09-11 00:00:25.104 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=496
-2026-09-11 00:00:25.191 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=99
-2026-09-11 00:00:25.412 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=93
-2026-09-11 00:00:25.585 | ERROR | DatabaseService | DB_SLOW_QUERY | Query exceeded expected latency | value=434
-2026-09-11 00:00:26.379 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=105
-2026-09-11 00:00:26.826 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=463
-2026-09-11 00:00:27.164 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=70
-2026-09-11 00:00:28.390 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=47
-2026-09-11 00:00:28.644 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=21
-2026-09-11 00:00:29.177 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:00:30.131 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:00:30.202 | INFO | SystemService | HIGH_CPU | CPU utilization exceeded expected level | value=32
-2026-09-11 00:00:31.087 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=32
-2026-09-11 00:00:32.154 | WARN | APIGateway | REQUEST_BAD | API request contained invalid data
-2026-09-11 00:00:32.816 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=29
-2026-09-11 00:00:33.087 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=32
-2026-09-11 00:00:33.180 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=211
-2026-09-11 00:00:33.608 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=71
-2026-09-11 00:00:35.487 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:00:36.702 | WARN | AuthService | AUTH_FAILURE | User authentication failed
-2026-09-11 00:00:36.973 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=76
-2026-09-11 00:00:37.550 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=243
-2026-09-11 00:00:37.901 | WARN | AuthService | AUTH_FAILURE | User authentication failed
-2026-09-11 00:00:38.542 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=46
-2026-09-11 00:00:38.889 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=259
-2026-09-11 00:00:39.198 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=138
-2026-09-11 00:00:39.528 | WARN | APIGateway | REQUEST_BAD | API request contained invalid data
-2026-09-11 00:00:40.513 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:00:42.208 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=496
-2026-09-11 00:00:42.860 | ERROR | APIGateway | REQUEST_TIMEOUT | API request timed out | value=3808
-2026-09-11 00:00:43.051 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=25
-2026-09-11 00:00:43.641 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=38
-2026-09-11 00:00:44.234 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=81
-2026-09-11 00:00:47.385 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=414
-2026-09-11 00:00:47.884 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:00:48.165 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=193
-2026-09-11 00:00:49.435 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=137
-2026-09-11 00:00:50.627 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:00:52.020 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=94
-2026-09-11 00:00:52.142 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=219
-2026-09-11 00:00:53.362 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=25
-2026-09-11 00:00:53.904 | WARN | SystemService | HIGH_MEMORY | Memory utilization exceeded expected level | value=62
-2026-09-11 00:00:55.066 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:00:55.143 | ERROR | APIGateway | REQUEST_TIMEOUT | API request timed out | value=4162
-2026-09-11 00:00:55.595 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=66
-2026-09-11 00:00:55.658 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:00:56.369 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=76
-2026-09-11 00:00:56.527 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=36
-2026-09-11 00:00:56.631 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=398
-2026-09-11 00:00:56.763 | WARN | AuthService | AUTH_FAILURE | User authentication failed
-2026-09-11 00:00:58.133 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:01:00.992 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:01:01.412 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:01:02.836 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=341
-2026-09-11 00:01:03.042 | WARN | APIGateway | REQUEST_BAD | API request contained invalid data
-2026-09-11 00:01:04.022 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=53
-2026-09-11 00:01:04.281 | WARN | DatabaseService | DB_SLOW_QUERY | Query exceeded expected latency | value=103
-2026-09-11 00:01:04.415 | INFO | SystemService | HIGH_MEMORY | Memory utilization exceeded expected level | value=56
-2026-09-11 00:01:04.534 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=460
-2026-09-11 00:01:04.590 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=84
-2026-09-11 00:01:04.773 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=65
-2026-09-11 00:01:04.781 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=171
-2026-09-11 00:01:05.230 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:01:06.024 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=231
-2026-09-11 00:01:06.500 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:01:07.899 | WARN | DatabaseService | DB_SLOW_QUERY | Query exceeded expected latency | value=142
-2026-09-11 00:01:08.687 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:01:09.206 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:01:09.672 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:01:10.106 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=64
-2026-09-11 00:01:10.694 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=70
-2026-09-11 00:01:11.231 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=100
-2026-09-11 00:01:11.245 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=68
-2026-09-11 00:01:11.305 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=481
-2026-09-11 00:01:12.131 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=25
-2026-09-11 00:01:12.173 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=89
-2026-09-11 00:01:12.892 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:01:13.405 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:01:13.762 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=500
-2026-09-11 00:01:14.525 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:01:14.589 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:01:15.217 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:01:15.340 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:01:15.454 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:01:15.844 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=36
-2026-09-11 00:01:16.001 | ERROR | AuthService | AUTH_SERVICE_ERROR | Authentication service encountered an error
-2026-09-11 00:01:17.604 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:01:18.502 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:01:18.573 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=90
-2026-09-11 00:01:19.450 | INFO | DatabaseService | DB_CONNECTION_RESTORED | Database connection restored
-2026-09-11 00:01:20.883 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=25
-2026-09-11 00:01:21.197 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=27
-2026-09-11 00:01:23.424 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:01:23.767 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=472
-2026-09-11 00:01:23.921 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:01:24.180 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=124
-2026-09-11 00:01:24.311 | INFO | DatabaseService | DB_SLOW_QUERY | Query exceeded expected latency | value=80
-2026-09-11 00:01:24.397 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:01:24.424 | WARN | SystemService | HIGH_CPU | CPU utilization exceeded expected level | value=78
-2026-09-11 00:01:24.811 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:01:26.141 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=483
-2026-09-11 00:01:26.180 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=188
-2026-09-11 00:01:26.571 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=22
-2026-09-11 00:01:26.621 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=276
-2026-09-11 00:01:27.142 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=282
-2026-09-11 00:01:27.142 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=423
-2026-09-11 00:01:28.113 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:01:28.329 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:01:28.752 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=108
-2026-09-11 00:01:28.976 | INFO | DatabaseService | DB_SLOW_QUERY | Query exceeded expected latency | value=98
-2026-09-11 00:01:29.518 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=123
-2026-09-11 00:01:29.668 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:01:31.189 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=91
-2026-09-11 00:01:31.742 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:01:31.972 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=434
-2026-09-11 00:01:32.325 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:01:32.734 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:01:32.898 | ERROR | DatabaseService | DB_SLOW_QUERY | Query exceeded expected latency | value=329
-2026-09-11 00:01:32.969 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:01:32.976 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=83
-2026-09-11 00:01:32.982 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:01:33.049 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:01:33.147 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:01:33.213 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:01:33.351 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=38
-2026-09-11 00:01:33.668 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=486
-2026-09-11 00:01:33.816 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=43
-2026-09-11 00:01:35.592 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=51
-2026-09-11 00:01:36.155 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=212
-2026-09-11 00:01:36.357 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:01:36.553 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=417
-2026-09-11 00:01:36.692 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:01:38.778 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=34
-2026-09-11 00:01:39.886 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=419
-2026-09-11 00:01:40.477 | INFO | SystemService | HIGH_MEMORY | Memory utilization exceeded expected level | value=30
-2026-09-11 00:01:40.573 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=95
-2026-09-11 00:01:40.705 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=67
-2026-09-11 00:01:40.877 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=482
-2026-09-11 00:01:40.953 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=77
-2026-09-11 00:01:40.996 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:01:42.103 | ERROR | SystemService | SERVICE_ERROR | System service encountered an error
-2026-09-11 00:01:42.654 | INFO | DatabaseService | DB_CONNECTION_RESTORED | Database connection restored
-2026-09-11 00:01:42.998 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=95
-2026-09-11 00:01:43.450 | ERROR | DatabaseService | DB_CONN_LOST | Connection to primary database lost
-2026-09-11 00:01:43.686 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=90
-2026-09-11 00:01:43.882 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=497
-2026-09-11 00:01:45.030 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:01:45.574 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:01:46.089 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=197
-2026-09-11 00:01:46.164 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:01:46.689 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:01:47.591 | WARN | AuthService | AUTH_FAILURE | User authentication failed
-2026-09-11 00:01:48.437 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:01:48.441 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=27
-2026-09-11 00:01:48.751 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:01:49.046 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=336
-2026-09-11 00:01:49.314 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=148
-2026-09-11 00:01:49.431 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:01:50.012 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=51
-2026-09-11 00:01:50.680 | WARN | SystemService | HIGH_CPU | CPU utilization exceeded expected level | value=66
-2026-09-11 00:01:50.985 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:01:51.909 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:01:52.450 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:01:52.872 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:01:52.953 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=69
-2026-09-11 00:01:55.449 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=71
-2026-09-11 00:01:55.870 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:01:55.892 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:01:55.899 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=250
-2026-09-11 00:01:56.680 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=64
-2026-09-11 00:01:57.278 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:01:57.374 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:01:57.617 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=132
-2026-09-11 00:01:57.971 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=247
-2026-09-11 00:01:59.468 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=203
-2026-09-11 00:02:00.141 | ERROR | DatabaseService | DB_SLOW_QUERY | Query exceeded expected latency | value=254
-2026-09-11 00:02:00.678 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=68
-2026-09-11 00:02:01.461 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=390
-2026-09-11 00:02:02.516 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:02:02.734 | WARN | AuthService | AUTH_FAILURE | User authentication failed
-2026-09-11 00:02:04.509 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:02:05.327 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:02:06.809 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=66
-2026-09-11 00:02:07.798 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=176
-2026-09-11 00:02:08.085 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=67
-2026-09-11 00:02:08.499 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=276
-2026-09-11 00:02:09.155 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:02:09.394 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=181
-2026-09-11 00:02:10.513 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=71
-2026-09-11 00:02:11.349 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:02:11.795 | ERROR | AuthService | AUTH_SERVICE_ERROR | Authentication service encountered an error
-2026-09-11 00:02:12.082 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=43
-2026-09-11 00:02:12.249 | WARN | APIGateway | REQUEST_BAD | API request contained invalid data
-2026-09-11 00:02:13.313 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:02:13.320 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=30
-2026-09-11 00:02:13.597 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:02:13.749 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:02:14.111 | INFO | SystemService | HIGH_MEMORY | Memory utilization exceeded expected level | value=29
-2026-09-11 00:02:14.582 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=73
-2026-09-11 00:02:14.651 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=37
-2026-09-11 00:02:14.718 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:02:14.831 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=75
-2026-09-11 00:02:15.209 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:02:15.261 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=84
-2026-09-11 00:02:16.469 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:02:18.125 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=71
-2026-09-11 00:02:18.311 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:02:18.730 | WARN | APIGateway | REQUEST_BAD | API request contained invalid data
-2026-09-11 00:02:19.604 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=96
-2026-09-11 00:02:20.200 | ERROR | AuthService | AUTH_SERVICE_ERROR | Authentication service encountered an error
-2026-09-11 00:02:20.262 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=398
-2026-09-11 00:02:20.718 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:02:21.248 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=47
-2026-09-11 00:02:21.300 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:02:21.332 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:02:21.676 | ERROR | DatabaseService | DB_CONN_LOST | Connection to primary database lost
-2026-09-11 00:02:22.538 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=261
-2026-09-11 00:02:22.763 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=24
-2026-09-11 00:02:22.888 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=47
-2026-09-11 00:02:26.261 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:02:26.797 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=132
-2026-09-11 00:02:27.384 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:02:27.577 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:02:27.633 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:02:28.991 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=187
-2026-09-11 00:02:29.099 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:02:29.521 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:02:29.691 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=399
-2026-09-11 00:02:29.852 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=35
-2026-09-11 00:02:30.438 | ERROR | SystemService | HIGH_MEMORY | Memory utilization exceeded expected level | value=87
-2026-09-11 00:02:31.320 | ERROR | APIGateway | REQUEST_TIMEOUT | API request timed out | value=2845
-2026-09-11 00:02:31.540 | WARN | AuthService | AUTH_FAILURE | User authentication failed
-2026-09-11 00:02:33.257 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=96
-2026-09-11 00:02:33.457 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=448
-2026-09-11 00:02:33.536 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=494
-2026-09-11 00:02:34.813 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:02:34.984 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:02:35.951 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:02:35.955 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:02:36.298 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=59
-2026-09-11 00:02:37.188 | WARN | APIGateway | REQUEST_BAD | API request contained invalid data
-2026-09-11 00:02:37.901 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:02:38.223 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=271
-2026-09-11 00:02:38.558 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:02:38.948 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=92
-2026-09-11 00:02:39.355 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:02:39.660 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=252
-2026-09-11 00:02:39.768 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:02:40.000 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=420
-2026-09-11 00:02:40.326 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:02:40.766 | ERROR | AuthService | AUTH_SERVICE_ERROR | Authentication service encountered an error
-2026-09-11 00:02:40.810 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=63
-2026-09-11 00:02:40.843 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=113
-2026-09-11 00:02:41.174 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=48
-2026-09-11 00:02:41.904 | ERROR | AuthService | AUTH_SERVICE_ERROR | Authentication service encountered an error
-2026-09-11 00:02:42.049 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:02:42.271 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=26
-2026-09-11 00:02:42.843 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:02:43.105 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:02:43.769 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=94
-2026-09-11 00:02:44.598 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=375
-2026-09-11 00:02:44.773 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=433
-2026-09-11 00:02:45.100 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:02:45.327 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:02:45.424 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=74
-2026-09-11 00:02:45.759 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:02:45.901 | WARN | AuthService | TOKEN_EXPIRED | Authentication token expired
-2026-09-11 00:02:46.453 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:02:47.303 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:02:48.218 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=27
-2026-09-11 00:02:49.101 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=77
-2026-09-11 00:02:49.142 | ERROR | APIGateway | HIGH_LATENCY | API request latency exceeded expected threshold | value=433
-2026-09-11 00:02:50.064 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:02:50.323 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=168
-2026-09-11 00:02:50.756 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:02:50.838 | ERROR | APIGateway | REQUEST_TIMEOUT | API request timed out | value=4814
-2026-09-11 00:02:51.842 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=214
-2026-09-11 00:02:52.532 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:02:52.548 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=88
-2026-09-11 00:02:54.233 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:02:54.610 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=73
-2026-09-11 00:02:54.654 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:02:54.668 | ERROR | DatabaseService | DB_SLOW_QUERY | Query exceeded expected latency | value=248
-2026-09-11 00:02:55.209 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=458
-2026-09-11 00:02:55.515 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=403
-2026-09-11 00:02:55.774 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=82
-2026-09-11 00:02:56.436 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=493
-2026-09-11 00:02:56.695 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:02:56.944 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:02:57.233 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=68
-2026-09-11 00:02:57.944 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:02:58.058 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=27
-2026-09-11 00:02:59.039 | WARN | SystemService | HIGH_CPU | CPU utilization exceeded expected level | value=80
-2026-09-11 00:02:59.428 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=45
-2026-09-11 00:03:00.114 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:03:00.454 | INFO | DatabaseService | DB_CONNECTION_RESTORED | Database connection restored
-2026-09-11 00:03:00.727 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:03:01.255 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=92
-2026-09-11 00:03:01.471 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:03:01.680 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:03:01.708 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=398
-2026-09-11 00:03:01.747 | WARN | APIGateway | REQUEST_BAD | API request contained invalid data
-2026-09-11 00:03:02.676 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=137
-2026-09-11 00:03:02.698 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=30
-2026-09-11 00:03:02.800 | ERROR | APIGateway | HIGH_LATENCY | API request latency exceeded expected threshold | value=352
-2026-09-11 00:03:03.064 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=281
-2026-09-11 00:03:03.146 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=285
-2026-09-11 00:03:04.789 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=443
-2026-09-11 00:03:04.991 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:03:05.988 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=62
-2026-09-11 00:03:05.989 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:03:06.418 | WARN | APIGateway | REQUEST_BAD | API request contained invalid data
-2026-09-11 00:03:07.236 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=211
-2026-09-11 00:03:07.362 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:03:07.518 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:03:07.519 | WARN | AuthService | AUTH_FAILURE | User authentication failed
-2026-09-11 00:03:07.585 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=189
-2026-09-11 00:03:07.766 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:03:07.781 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:03:07.902 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=55
-2026-09-11 00:03:08.714 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=444
-2026-09-11 00:03:08.827 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:03:09.657 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:03:09.724 | ERROR | DatabaseService | DB_SLOW_QUERY | Query exceeded expected latency | value=450
-2026-09-11 00:03:10.203 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:03:10.410 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:03:11.208 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=498
-2026-09-11 00:03:11.343 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:03:12.411 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=448
-2026-09-11 00:03:12.780 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=478
-2026-09-11 00:03:13.415 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=360
-2026-09-11 00:03:13.607 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:03:13.785 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=59
-2026-09-11 00:03:13.992 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=39
-2026-09-11 00:03:14.281 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:03:15.265 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:03:16.386 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:03:16.546 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:03:16.711 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:03:17.341 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=95
-2026-09-11 00:03:17.540 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:03:19.249 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:03:19.626 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:03:19.773 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:03:19.774 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:03:19.965 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:03:21.749 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=429
-2026-09-11 00:03:22.394 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=227
-2026-09-11 00:03:23.078 | ERROR | DatabaseService | DB_SLOW_QUERY | Query exceeded expected latency | value=399
-2026-09-11 00:03:23.567 | ERROR | DatabaseService | DB_CONN_LOST | Connection to primary database lost
-2026-09-11 00:03:23.706 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:03:23.781 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:03:24.104 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:03:25.455 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:03:25.911 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:03:26.025 | WARN | AuthService | AUTH_FAILURE | User authentication failed
-2026-09-11 00:03:26.898 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=59
-2026-09-11 00:03:27.661 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:03:27.718 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=284
-2026-09-11 00:03:28.422 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:03:28.994 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:03:30.379 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=92
-2026-09-11 00:03:30.545 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:03:30.772 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=29
-2026-09-11 00:03:30.964 | ERROR | APIGateway | HIGH_LATENCY | API request latency exceeded expected threshold | value=252
-2026-09-11 00:03:33.031 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:03:33.568 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:03:33.919 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=59
-2026-09-11 00:03:34.976 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:03:36.691 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:03:37.220 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:03:37.984 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=454
-2026-09-11 00:03:38.037 | ERROR | SystemService | HIGH_CPU | CPU utilization exceeded expected level | value=85
-2026-09-11 00:03:38.414 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:03:38.657 | WARN | AuthService | TOKEN_EXPIRED | Authentication token expired
-2026-09-11 00:03:39.192 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=440
-2026-09-11 00:03:39.223 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=61
-2026-09-11 00:03:40.136 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:03:40.759 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=131
-2026-09-11 00:03:41.262 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:03:41.594 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=377
-2026-09-11 00:03:41.645 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=76
-2026-09-11 00:03:42.991 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=31
-2026-09-11 00:03:43.404 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=443
-2026-09-11 00:03:43.436 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:03:43.481 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:03:44.931 | WARN | AuthService | AUTH_FAILURE | User authentication failed
-2026-09-11 00:03:45.311 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=91
-2026-09-11 00:03:45.657 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:03:46.449 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=375
-2026-09-11 00:03:47.997 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:03:48.108 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:03:50.014 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:03:50.217 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:03:51.899 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:03:51.917 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:03:52.337 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=52
-2026-09-11 00:03:52.735 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=59
-2026-09-11 00:03:53.091 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:03:53.346 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=59
-2026-09-11 00:03:54.688 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:03:54.800 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:03:54.926 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=291
-2026-09-11 00:03:57.119 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:03:57.940 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:03:58.578 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:03:58.622 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:03:59.131 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:03:59.165 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=435
-2026-09-11 00:04:00.601 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=446
-2026-09-11 00:04:01.291 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=386
-2026-09-11 00:04:01.372 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=75
-2026-09-11 00:04:01.449 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:04:01.530 | INFO | SystemService | HIGH_MEMORY | Memory utilization exceeded expected level | value=25
-2026-09-11 00:04:01.592 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:04:01.925 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:04:02.206 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:04:03.252 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=30
-2026-09-11 00:04:04.122 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:04:04.383 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=470
-2026-09-11 00:04:06.487 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:04:08.043 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:04:08.364 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=82
-2026-09-11 00:04:08.475 | WARN | AuthService | AUTH_FAILURE | User authentication failed
-2026-09-11 00:04:09.433 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:04:10.172 | WARN | APIGateway | REQUEST_BAD | API request contained invalid data
-2026-09-11 00:04:10.354 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:04:11.149 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=448
-2026-09-11 00:04:11.278 | INFO | SystemService | SERVICE_STARTED | System service started successfully
-2026-09-11 00:04:11.708 | ERROR | DatabaseService | DB_CONN_LOST | Connection to primary database lost
-2026-09-11 00:04:12.917 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:04:13.640 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=70
-2026-09-11 00:04:13.844 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:04:13.898 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:04:14.046 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=52
-2026-09-11 00:04:14.504 | WARN | APIGateway | REQUEST_BAD | API request contained invalid data
-2026-09-11 00:04:15.199 | WARN | APIGateway | REQUEST_BAD | API request contained invalid data
-2026-09-11 00:04:15.886 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
-2026-09-11 00:04:16.807 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:04:17.057 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:04:17.825 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=54
-2026-09-11 00:04:17.961 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
-2026-09-11 00:04:18.097 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:04:18.197 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
-2026-09-11 00:04:18.224 | ERROR | APIGateway | HIGH_LATENCY | API request latency exceeded expected threshold | value=402
+2026-09-11 00:00:00.000 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=164
+2026-09-11 00:00:00.094 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:00:00.095 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:00:00.827 | ERROR | DatabaseService | DB_SLOW_QUERY | Query exceeded expected latency | value=296
+2026-09-11 00:00:00.953 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=420
+2026-09-11 00:00:01.289 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=54
+2026-09-11 00:00:01.674 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:00:01.945 | WARN | APIGateway | REQUEST_BAD | API request contained invalid data
+2026-09-11 00:00:03.972 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=474
+2026-09-11 00:00:04.012 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=20
+2026-09-11 00:00:04.024 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=136
+2026-09-11 00:00:04.740 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=25
+2026-09-11 00:00:05.076 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=59
+2026-09-11 00:00:05.887 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=47
+2026-09-11 00:00:08.351 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=137
+2026-09-11 00:00:08.459 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=103
+2026-09-11 00:00:08.772 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=64
+2026-09-11 00:00:09.244 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:00:09.315 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:00:10.990 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=444
+2026-09-11 00:00:11.105 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:00:11.357 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=72
+2026-09-11 00:00:12.761 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:00:12.982 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:00:13.184 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=45
+2026-09-11 00:00:13.689 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=25
+2026-09-11 00:00:13.733 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=86
+2026-09-11 00:00:13.810 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=357
+2026-09-11 00:00:14.286 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:00:15.631 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=49
+2026-09-11 00:00:15.699 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:00:16.444 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:00:16.523 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=116
+2026-09-11 00:00:16.882 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:00:17.023 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=39
+2026-09-11 00:00:17.087 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:00:17.208 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=90
+2026-09-11 00:00:17.926 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=56
+2026-09-11 00:00:17.942 | WARN | AuthService | AUTH_FAILURE | User authentication failed
+2026-09-11 00:00:17.992 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:00:18.307 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:00:18.713 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:00:19.136 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=128
+2026-09-11 00:00:19.182 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:00:19.329 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=53
+2026-09-11 00:00:19.596 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=79
+2026-09-11 00:00:20.216 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=98
+2026-09-11 00:00:20.261 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=136
+2026-09-11 00:00:20.274 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:00:20.432 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=97
+2026-09-11 00:00:20.621 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=230
+2026-09-11 00:00:20.985 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:00:21.926 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:00:22.057 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=111
+2026-09-11 00:00:22.149 | ERROR | APIGateway | HIGH_LATENCY | API request latency exceeded expected threshold | value=352
+2026-09-11 00:00:22.680 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:00:23.305 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:00:23.494 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=22
+2026-09-11 00:00:24.591 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=22
+2026-09-11 00:00:25.066 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:00:25.400 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=37
+2026-09-11 00:00:26.168 | WARN | AuthService | TOKEN_EXPIRED | Authentication token expired
+2026-09-11 00:00:26.176 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:00:26.178 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=443
+2026-09-11 00:00:26.558 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:00:27.287 | ERROR | AuthService | AUTH_SERVICE_ERROR | Authentication service encountered an error
+2026-09-11 00:00:27.420 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:00:27.806 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:00:27.829 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=212
+2026-09-11 00:00:28.712 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=51
+2026-09-11 00:00:28.817 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:00:29.002 | WARN | AuthService | AUTH_FAILURE | User authentication failed
+2026-09-11 00:00:29.745 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=342
+2026-09-11 00:00:30.915 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:00:31.106 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:00:31.164 | ERROR | SystemService | SERVICE_ERROR | System service encountered an error
+2026-09-11 00:00:31.835 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=50
+2026-09-11 00:00:31.898 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:00:31.964 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=344
+2026-09-11 00:00:32.334 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=78
+2026-09-11 00:00:32.921 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:00:33.444 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=342
+2026-09-11 00:00:33.663 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:00:34.253 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=433
+2026-09-11 00:00:35.141 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=22
+2026-09-11 00:00:35.454 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:00:35.956 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:00:37.085 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:00:37.277 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=32
+2026-09-11 00:00:37.950 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:00:38.092 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:00:38.169 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=66
+2026-09-11 00:00:38.492 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=48
+2026-09-11 00:00:38.514 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:00:38.983 | WARN | AuthService | AUTH_FAILURE | User authentication failed
+2026-09-11 00:00:39.448 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:00:39.456 | ERROR | DatabaseService | DB_SLOW_QUERY | Query exceeded expected latency | value=424
+2026-09-11 00:00:40.147 | INFO | DatabaseService | DB_CONNECTION_RESTORED | Database connection restored
+2026-09-11 00:00:40.633 | WARN | APIGateway | REQUEST_BAD | API request contained invalid data
+2026-09-11 00:00:41.534 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=77
+2026-09-11 00:00:42.469 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:00:42.953 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:00:43.365 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=33
+2026-09-11 00:00:43.948 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:00:43.960 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=71
+2026-09-11 00:00:44.763 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:00:44.833 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=480
+2026-09-11 00:00:46.308 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:00:47.059 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=71
+2026-09-11 00:00:48.720 | WARN | AuthService | AUTH_FAILURE | User authentication failed
+2026-09-11 00:00:49.583 | INFO | SystemService | HIGH_MEMORY | Memory utilization exceeded expected level | value=51
+2026-09-11 00:00:51.305 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:00:53.526 | CRITICAL | SystemService | HIGH_CPU | CPU utilization exceeded expected level | value=100
+2026-09-11 00:00:53.832 | ERROR | SystemService | SERVICE_ERROR | System service encountered an error
+2026-09-11 00:00:54.744 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=80
+2026-09-11 00:00:55.812 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:00:56.175 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=399
+2026-09-11 00:00:56.311 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:00:56.730 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=35
+2026-09-11 00:00:56.895 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=41
+2026-09-11 00:00:58.108 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:00:59.448 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=131
+2026-09-11 00:00:59.872 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=119
+2026-09-11 00:01:00.768 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:01:00.939 | INFO | SystemService | HIGH_CPU | CPU utilization exceeded expected level | value=26
+2026-09-11 00:01:01.757 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:01:02.283 | WARN | AuthService | AUTH_FAILURE | User authentication failed
+2026-09-11 00:01:03.492 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=33
+2026-09-11 00:01:05.011 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=99
+2026-09-11 00:01:05.170 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:01:05.377 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=41
+2026-09-11 00:01:05.602 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=420
+2026-09-11 00:01:05.768 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=77
+2026-09-11 00:01:07.577 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=209
+2026-09-11 00:01:08.145 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:01:09.344 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:01:10.248 | ERROR | AuthService | AUTH_SERVICE_ERROR | Authentication service encountered an error
+2026-09-11 00:01:10.916 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:01:11.599 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:01:12.743 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=334
+2026-09-11 00:01:13.438 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:01:14.607 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:01:14.650 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=97
+2026-09-11 00:01:16.442 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:01:17.128 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:01:17.221 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=71
+2026-09-11 00:01:17.384 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=247
+2026-09-11 00:01:17.644 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:01:18.645 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:01:18.946 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=27
+2026-09-11 00:01:20.530 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=105
+2026-09-11 00:01:21.307 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=88
+2026-09-11 00:01:21.736 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=177
+2026-09-11 00:01:22.010 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:01:22.058 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:01:22.686 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=48
+2026-09-11 00:01:23.971 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:01:24.083 | ERROR | SystemService | HIGH_MEMORY | Memory utilization exceeded expected level | value=82
+2026-09-11 00:01:24.648 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=130
+2026-09-11 00:01:26.255 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:01:26.325 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:01:26.646 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:01:26.685 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:01:27.180 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=416
+2026-09-11 00:01:27.477 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=45
+2026-09-11 00:01:27.637 | ERROR | AuthService | AUTH_SERVICE_ERROR | Authentication service encountered an error
+2026-09-11 00:01:28.830 | INFO | SystemService | HIGH_MEMORY | Memory utilization exceeded expected level | value=35
+2026-09-11 00:01:28.986 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:01:29.201 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=25
+2026-09-11 00:01:29.796 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=77
+2026-09-11 00:01:30.311 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=81
+2026-09-11 00:01:31.172 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=413
+2026-09-11 00:01:32.051 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=415
+2026-09-11 00:01:32.360 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=98
+2026-09-11 00:01:32.466 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:01:32.538 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:01:33.884 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:01:34.321 | WARN | AuthService | AUTH_FAILURE | User authentication failed
+2026-09-11 00:01:35.605 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:01:36.579 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=262
+2026-09-11 00:01:36.703 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:01:37.143 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=405
+2026-09-11 00:01:38.600 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=87
+2026-09-11 00:01:39.754 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:01:40.255 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:01:41.412 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:01:42.040 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:01:42.253 | INFO | SystemService | HIGH_CPU | CPU utilization exceeded expected level | value=36
+2026-09-11 00:01:42.454 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:01:42.602 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:01:43.212 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:01:43.281 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:01:43.363 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=32
+2026-09-11 00:01:43.518 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:01:43.992 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:01:44.033 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:01:44.173 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:01:44.808 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:01:44.923 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=415
+2026-09-11 00:01:45.312 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:01:45.412 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:01:45.747 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:01:46.599 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:01:46.777 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=457
+2026-09-11 00:01:47.173 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=105
+2026-09-11 00:01:48.041 | WARN | APIGateway | REQUEST_BAD | API request contained invalid data
+2026-09-11 00:01:48.648 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:01:48.790 | INFO | SystemService | HIGH_MEMORY | Memory utilization exceeded expected level | value=38
+2026-09-11 00:01:49.232 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:01:49.614 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=446
+2026-09-11 00:01:49.960 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:01:50.204 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:01:50.482 | WARN | AuthService | TOKEN_EXPIRED | Authentication token expired
+2026-09-11 00:01:50.971 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=431
+2026-09-11 00:01:51.019 | ERROR | DatabaseService | DB_SLOW_QUERY | Query exceeded expected latency | value=385
+2026-09-11 00:01:51.139 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:01:51.177 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:01:51.996 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:01:53.383 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:01:53.582 | WARN | SystemService | HIGH_MEMORY | Memory utilization exceeded expected level | value=70
+2026-09-11 00:01:54.429 | WARN | APIGateway | REQUEST_BAD | API request contained invalid data
+2026-09-11 00:01:54.464 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=235
+2026-09-11 00:01:54.732 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=456
+2026-09-11 00:01:55.444 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:01:57.299 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:01:58.789 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:01:58.837 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:02:01.288 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=90
+2026-09-11 00:02:01.356 | WARN | AuthService | AUTH_FAILURE | User authentication failed
+2026-09-11 00:02:01.711 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:02:02.260 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:02:02.712 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=376
+2026-09-11 00:02:02.832 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:02:03.006 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:02:03.293 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:02:03.340 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=77
+2026-09-11 00:02:03.945 | ERROR | APIGateway | HIGH_LATENCY | API request latency exceeded expected threshold | value=326
+2026-09-11 00:02:03.956 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=194
+2026-09-11 00:02:04.680 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:02:05.105 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=393
+2026-09-11 00:02:05.733 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:02:06.082 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=340
+2026-09-11 00:02:06.597 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=73
+2026-09-11 00:02:06.650 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=44
+2026-09-11 00:02:06.911 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:02:07.179 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=378
+2026-09-11 00:02:07.209 | WARN | APIGateway | REQUEST_BAD | API request contained invalid data
+2026-09-11 00:02:07.300 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=227
+2026-09-11 00:02:07.617 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:02:08.147 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=489
+2026-09-11 00:02:08.651 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:02:09.157 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=96
+2026-09-11 00:02:10.471 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=289
+2026-09-11 00:02:10.558 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=86
+2026-09-11 00:02:10.864 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=26
+2026-09-11 00:02:11.017 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:02:11.718 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=100
+2026-09-11 00:02:12.316 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=373
+2026-09-11 00:02:13.018 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=385
+2026-09-11 00:02:13.039 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=189
+2026-09-11 00:02:13.325 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=80
+2026-09-11 00:02:13.348 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=225
+2026-09-11 00:02:13.695 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=23
+2026-09-11 00:02:14.051 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:02:15.561 | WARN | AuthService | AUTH_FAILURE | User authentication failed
+2026-09-11 00:02:16.966 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=193
+2026-09-11 00:02:17.294 | WARN | APIGateway | REQUEST_BAD | API request contained invalid data
+2026-09-11 00:02:18.607 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=468
+2026-09-11 00:02:18.942 | WARN | APIGateway | REQUEST_BAD | API request contained invalid data
+2026-09-11 00:02:18.975 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:02:20.292 | ERROR | AuthService | AUTH_SERVICE_ERROR | Authentication service encountered an error
+2026-09-11 00:02:20.468 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=93
+2026-09-11 00:02:20.570 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:02:22.323 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:02:22.490 | WARN | AuthService | AUTH_FAILURE | User authentication failed
+2026-09-11 00:02:22.598 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:02:22.853 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=70
+2026-09-11 00:02:23.069 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:02:23.817 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=41
+2026-09-11 00:02:23.857 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:02:24.057 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=253
+2026-09-11 00:02:24.211 | INFO | SystemService | HIGH_CPU | CPU utilization exceeded expected level | value=53
+2026-09-11 00:02:24.918 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:02:25.215 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=205
+2026-09-11 00:02:25.688 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=160
+2026-09-11 00:02:25.733 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=168
+2026-09-11 00:02:25.840 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=74
+2026-09-11 00:02:26.458 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:02:26.484 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=42
+2026-09-11 00:02:26.798 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=71
+2026-09-11 00:02:27.160 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=241
+2026-09-11 00:02:27.231 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:02:27.323 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:02:27.459 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=82
+2026-09-11 00:02:28.495 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:02:29.039 | WARN | AuthService | AUTH_FAILURE | User authentication failed
+2026-09-11 00:02:29.405 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:02:29.662 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=69
+2026-09-11 00:02:30.395 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:02:30.484 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=26
+2026-09-11 00:02:31.486 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:02:31.705 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:02:31.733 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:02:33.926 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:02:34.132 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=274
+2026-09-11 00:02:34.392 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:02:35.586 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:02:36.089 | WARN | DatabaseService | DB_SLOW_QUERY | Query exceeded expected latency | value=162
+2026-09-11 00:02:36.245 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=221
+2026-09-11 00:02:36.309 | WARN | AuthService | AUTH_FAILURE | User authentication failed
+2026-09-11 00:02:36.592 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:02:37.151 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=68
+2026-09-11 00:02:37.678 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=98
+2026-09-11 00:02:37.843 | WARN | APIGateway | REQUEST_BAD | API request contained invalid data
+2026-09-11 00:02:37.960 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:02:39.469 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:02:40.183 | WARN | APIGateway | REQUEST_BAD | API request contained invalid data
+2026-09-11 00:02:40.740 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=357
+2026-09-11 00:02:41.003 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=105
+2026-09-11 00:02:41.033 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=127
+2026-09-11 00:02:41.518 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:02:41.807 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=28
+2026-09-11 00:02:43.580 | WARN | AuthService | AUTH_FAILURE | User authentication failed
+2026-09-11 00:02:43.627 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=308
+2026-09-11 00:02:43.698 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=24
+2026-09-11 00:02:44.190 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:02:44.254 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=355
+2026-09-11 00:02:44.558 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:02:45.761 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:02:47.348 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=40
+2026-09-11 00:02:47.844 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=87
+2026-09-11 00:02:47.886 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=75
+2026-09-11 00:02:48.041 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:02:49.048 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:02:49.342 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=103
+2026-09-11 00:02:49.681 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:02:50.087 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=69
+2026-09-11 00:02:50.178 | WARN | APIGateway | REQUEST_BAD | API request contained invalid data
+2026-09-11 00:02:50.344 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:02:50.835 | WARN | APIGateway | REQUEST_BAD | API request contained invalid data
+2026-09-11 00:02:50.835 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:02:52.162 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=77
+2026-09-11 00:02:53.108 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:02:53.780 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:02:54.288 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=59
+2026-09-11 00:02:54.922 | WARN | AuthService | AUTH_FAILURE | User authentication failed
+2026-09-11 00:02:55.114 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:02:55.170 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=39
+2026-09-11 00:02:56.050 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=108
+2026-09-11 00:02:56.211 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:02:56.337 | WARN | AuthService | AUTH_FAILURE | User authentication failed
+2026-09-11 00:02:58.752 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=376
+2026-09-11 00:03:00.504 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:03:00.909 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:03:01.273 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=254
+2026-09-11 00:03:01.297 | WARN | APIGateway | REQUEST_BAD | API request contained invalid data
+2026-09-11 00:03:01.575 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=39
+2026-09-11 00:03:02.215 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=96
+2026-09-11 00:03:02.629 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:03:02.693 | CRITICAL | SystemService | HIGH_MEMORY | Memory utilization exceeded expected level | value=97
+2026-09-11 00:03:02.713 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:03:03.206 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:03:03.783 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=56
+2026-09-11 00:03:04.947 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=98
+2026-09-11 00:03:05.058 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:03:05.255 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=66
+2026-09-11 00:03:05.414 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=58
+2026-09-11 00:03:05.602 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=256
+2026-09-11 00:03:06.325 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:03:06.334 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:03:06.335 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:03:06.451 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=43
+2026-09-11 00:03:06.966 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=341
+2026-09-11 00:03:07.200 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=211
+2026-09-11 00:03:07.676 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:03:07.687 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=97
+2026-09-11 00:03:07.893 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:03:08.793 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=498
+2026-09-11 00:03:08.899 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:03:09.474 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=35
+2026-09-11 00:03:09.844 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:03:10.785 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:03:10.971 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=376
+2026-09-11 00:03:10.991 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=478
+2026-09-11 00:03:11.360 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=179
+2026-09-11 00:03:11.533 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=76
+2026-09-11 00:03:11.611 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:03:12.873 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:03:13.199 | WARN | SystemService | HIGH_CPU | CPU utilization exceeded expected level | value=74
+2026-09-11 00:03:14.741 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:03:14.800 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:03:15.787 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:03:15.802 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=405
+2026-09-11 00:03:18.532 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:03:18.957 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=231
+2026-09-11 00:03:19.701 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:03:19.783 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=366
+2026-09-11 00:03:20.147 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:03:20.373 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:03:21.614 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:03:21.847 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:03:22.184 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:03:22.546 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:03:22.635 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=82
+2026-09-11 00:03:22.975 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:03:23.020 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:03:23.127 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:03:23.999 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=93
+2026-09-11 00:03:25.030 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:03:25.925 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:03:25.938 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=340
+2026-09-11 00:03:26.308 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=31
+2026-09-11 00:03:26.357 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:03:26.592 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:03:27.389 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=52
+2026-09-11 00:03:27.393 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=88
+2026-09-11 00:03:28.798 | WARN | APIGateway | REQUEST_BAD | API request contained invalid data
+2026-09-11 00:03:28.873 | WARN | APIGateway | RETRY_ATTEMPT | Retry attempt for failed API request | value=12
+2026-09-11 00:03:30.409 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:03:31.296 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:03:31.834 | WARN | APIGateway | RETRY_ATTEMPT | Retry attempt for failed API request | value=14
+2026-09-11 00:03:31.837 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:03:32.827 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=31
+2026-09-11 00:03:33.777 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=408
+2026-09-11 00:03:34.949 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:03:35.140 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=24
+2026-09-11 00:03:35.425 | WARN | APIGateway | REQUEST_BAD | API request contained invalid data
+2026-09-11 00:03:35.512 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:03:36.578 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:03:37.283 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:03:37.464 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=41
+2026-09-11 00:03:37.720 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=362
+2026-09-11 00:03:37.750 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:03:40.176 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=233
+2026-09-11 00:03:40.244 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=97
+2026-09-11 00:03:40.274 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:03:40.842 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:03:41.449 | WARN | AuthService | TOKEN_EXPIRED | Authentication token expired
+2026-09-11 00:03:41.624 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:03:41.771 | WARN | SystemService | HIGH_CPU | CPU utilization exceeded expected level | value=76
+2026-09-11 00:03:41.949 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:03:41.987 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=93
+2026-09-11 00:03:42.471 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=76
+2026-09-11 00:03:42.477 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=470
+2026-09-11 00:03:42.501 | WARN | AuthService | AUTH_FAILURE | User authentication failed
+2026-09-11 00:03:42.687 | INFO | SystemService | HIGH_CPU | CPU utilization exceeded expected level | value=26
+2026-09-11 00:03:43.428 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:03:43.435 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:03:44.074 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=47
+2026-09-11 00:03:44.103 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=383
+2026-09-11 00:03:44.216 | WARN | AuthService | TOKEN_EXPIRED | Authentication token expired
+2026-09-11 00:03:45.284 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=67
+2026-09-11 00:03:48.545 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:03:48.907 | INFO | DatabaseService | DB_CONNECTION_RESTORED | Database connection restored
+2026-09-11 00:03:49.672 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:03:49.843 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=354
+2026-09-11 00:03:50.240 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=37
+2026-09-11 00:03:50.338 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=78
+2026-09-11 00:03:50.389 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:03:50.958 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:03:51.286 | ERROR | DatabaseService | DB_SLOW_QUERY | Query exceeded expected latency | value=331
+2026-09-11 00:03:51.313 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:03:51.764 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=47
+2026-09-11 00:03:52.105 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=34
+2026-09-11 00:03:52.208 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=312
+2026-09-11 00:03:53.111 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:03:53.335 | WARN | SystemService | HIGH_MEMORY | Memory utilization exceeded expected level | value=65
+2026-09-11 00:03:53.604 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:03:53.654 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=46
+2026-09-11 00:03:53.773 | WARN | AuthService | AUTH_FAILURE | User authentication failed
+2026-09-11 00:03:55.187 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=58
+2026-09-11 00:03:56.165 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=456
+2026-09-11 00:03:56.195 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=463
+2026-09-11 00:03:56.361 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=284
+2026-09-11 00:03:57.005 | INFO | SystemService | SERVICE_STARTED | System service started successfully
+2026-09-11 00:03:57.008 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=72
+2026-09-11 00:03:57.245 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=385
+2026-09-11 00:03:59.797 | WARN | AuthService | TOKEN_EXPIRED | Authentication token expired
+2026-09-11 00:03:59.969 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:04:00.671 | INFO | SystemService | HIGH_MEMORY | Memory utilization exceeded expected level | value=24
+2026-09-11 00:04:01.776 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=306
+2026-09-11 00:04:03.697 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=206
+2026-09-11 00:04:03.915 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:04:04.319 | INFO | SystemService | HIGH_CPU | CPU utilization exceeded expected level | value=53
+2026-09-11 00:04:05.251 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:04:05.819 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:04:05.911 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:04:06.313 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:04:09.251 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued
+2026-09-11 00:04:09.397 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:04:09.663 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=439
+2026-09-11 00:04:10.907 | INFO | APIGateway | REQUEST_OK | API request completed successfully | value=384
+2026-09-11 00:04:11.622 | INFO | APIGateway | REQUEST_CREATED | API resource created successfully | value=380
+2026-09-11 00:04:12.211 | ERROR | AuthService | AUTH_SERVICE_ERROR | Authentication service encountered an error
+2026-09-11 00:04:12.386 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:04:12.432 | INFO | DatabaseService | REQUEST_OK | Database request completed successfully | value=65
+2026-09-11 00:04:12.581 | INFO | SystemService | HEALTH_CHECK_OK | System health check passed
+2026-09-11 00:04:12.929 | INFO | AuthService | AUTH_SUCCESS | User authentication successful
+2026-09-11 00:04:12.943 | INFO | DatabaseService | QUERY_EXECUTED | Database query executed successfully | value=46
+2026-09-11 00:04:13.051 | INFO | AuthService | TOKEN_ISSUED | Authentication token issued

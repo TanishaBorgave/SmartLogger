@@ -42,7 +42,7 @@ EVENT_TYPES = {
 
         "REQUEST_TIMEOUT": {
             "severity": "ERROR",
-            "weight": 2,
+            "weight": 0,
             "message": "API request timed out",
             "value_range": (1000, 5000)
         },
@@ -57,7 +57,22 @@ EVENT_TYPES = {
             "weight": 3,
             "message": "API request latency exceeded expected threshold",
             "value_range": (20, 500)
+        },
+
+        "RETRY_ATTEMPT": {
+            "severity": "WARN",
+            "weight": 1,
+            "message": "Retry attempt for failed API request",
+            "value_range": (1, 15)
+        },
+
+        "RETRY_EXHAUSTED": {
+            "severity": "ERROR",
+            "weight": 0,
+            "message": "Maximum retry attempts exceeded",
+            "value_range": (8, 15)
         }
+
     },
 
     "AuthService": {
@@ -128,7 +143,7 @@ EVENT_TYPES = {
 
         "DB_CONN_LOST": {
             "severity": "ERROR",
-            "weight": 2,
+            "weight": 0,
             "message": "Connection to primary database lost",
             "value_range": None
         },

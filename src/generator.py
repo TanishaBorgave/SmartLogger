@@ -175,12 +175,12 @@ if __name__ == "__main__":
         0
     )
 
-    spike_logs = inject_spike(start_time)
+    # spike_logs = inject_spike(start_time)
 
-    print("Number of spike logs:", len(spike_logs))
+    # print("Number of spike logs:", len(spike_logs))
 
-    for log in spike_logs:
-        print(log)
+    # for log in spike_logs:
+    #     print(log)
 
 def inject_gradual_degradation(start_time):
 
@@ -345,7 +345,181 @@ start_time = datetime(
 
 cascade_logs = inject_cascading_failure(start_time)
 
-print("Number of cascade logs:", len(cascade_logs))
+# print("Number of cascade logs:", len(cascade_logs))
 
-for log in cascade_logs:
-    print(log)
+# for log in cascade_logs:
+#     print(log)
+
+
+def inject_retry_loop(start_time):
+    logs = []
+    current_time = start_time
+
+    retry_count = random.randint(8, 15)
+
+
+    for attempt in range(1, retry_count + 1):
+
+        current_time += timedelta(
+            seconds=random.uniform(0.5, 2)
+        )
+
+        log = (
+            current_time,
+            "WARN",
+            "APIGateway",
+            "RETRY_ATTEMPT",
+            f"Retry attempt for failed API request | value={attempt}",
+            attempt
+        )
+
+        logs.append(log)
+
+
+
+    current_time += timedelta(
+        seconds=random.uniform(0.5, 2)
+    )
+
+    log = (
+        current_time,
+        "ERROR",
+        "APIGateway",
+        "RETRY_EXHAUSTED",
+        f"Maximum retry attempts exceeded | value={retry_count}",
+        retry_count
+    )
+
+    logs.append(log)
+
+    return logs
+
+start_time = datetime(
+    2026,
+    9,
+    11,
+    15,
+    30,
+    0
+)
+
+retry_logs = inject_retry_loop(start_time)
+
+# print("Number of retry logs:", len(retry_logs))
+
+# for log in retry_logs:
+#     print(log)
+
+def inject_silent_failure(start_time):
+
+    duration = timedelta(minutes=5)
+
+    end_time = start_time + duration
+
+    return {
+        "start": start_time,
+        "end": end_time,
+        "type": "silent_failure"
+    }
+
+start_time = datetime(
+    2026,
+    9,
+    11,
+    16,
+    0,
+    0
+)
+
+silent_failure = inject_silent_failure(start_time)
+
+print("Silent failure:")
+print(silent_failure)
+
+
+
+def generate_full_timeline():
+
+    start_time = datetime(2026, 9, 11, 0, 0, 0)
+
+    end_time = start_time + timedelta(hours=24)
+
+    silent_time = start_time + timedelta(hours=20)
+
+    logs = []
+    silent_periods = []
+
+    current_time = start_time
+
+    while current_time < end_time:
+
+        if silent_time <= current_time < silent_time + timedelta(minutes=5):
+            current_time += timedelta(
+                seconds=random.uniform(1, 3)
+            )
+            continue
+
+        log = generate_baseline_log(current_time)
+        logs.append(log)
+
+        current_time += timedelta(
+            seconds=random.uniform(1, 3)
+        )
+
+    # Generate anomaly injectors
+    spike_time = start_time + timedelta(hours=2, minutes=30)
+    degradation_time = start_time + timedelta(hours=7)
+    cascade_time = start_time + timedelta(hours=11, minutes=30)
+    retry_time = start_time + timedelta(hours=16)
+
+    logs.extend(inject_spike(spike_time))
+    logs.extend(inject_gradual_degradation(degradation_time))
+    logs.extend(inject_cascading_failure(cascade_time))
+    logs.extend(inject_retry_loop(retry_time))
+
+    silent_failure = inject_silent_failure(silent_time)
+    silent_periods.append(silent_failure)
+
+    logs.sort(key=lambda x: x[0])
+
+    return logs, silent_periods
+
+if __name__ == "__main__":
+
+    logs, silent_periods = generate_full_timeline()
+
+    print("Total logs:", len(logs))
+    print("Silent periods:", silent_periods)
+
+    # Count important injected events
+    spike_count = sum(
+        1 for log in logs
+        if log[3] == "REQUEST_TIMEOUT"
+    )
+
+    deadlock_count = sum(
+        1 for log in logs
+        if log[3] == "DB_DEADLOCK"
+    )
+
+    connection_lost_count = sum(
+        1 for log in logs
+        if log[3] == "DB_CONN_LOST"
+    )
+
+    service_unavailable_count = sum(
+        1 for log in logs
+        if log[3] == "SERVICE_UNAVAILABLE"
+    )
+
+    retry_exhausted_count = sum(
+        1 for log in logs
+        if log[3] == "RETRY_EXHAUSTED"
+    )
+
+    print("\nInjected anomaly counts:")
+    print("REQUEST_TIMEOUT:", spike_count)
+    print("DB_DEADLOCK:", deadlock_count)
+    print("DB_CONN_LOST:", connection_lost_count)
+    print("SERVICE_UNAVAILABLE:", service_unavailable_count)
+    print("RETRY_EXHAUSTED:", retry_exhausted_count)
