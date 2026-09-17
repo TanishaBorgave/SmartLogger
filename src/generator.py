@@ -91,96 +91,23 @@ def format_log(log):
     )
 
 
-if __name__ == "__main__":
 
-    start_time = datetime(
-        2026,
-        9,
-        11,
-        0,
-        0,
-        0
-    )
-
-    current_time = start_time
-
+def inject_spike(start_time):  
     logs = []
-
-    for _ in range(500):
-
-        log = generate_baseline_log(current_time)
-
-        logs.append(log)
-
-        gap = random.expovariate(2)
-
-        current_time += timedelta(
-            seconds=gap
+    count = random.randint(40, 60)
+    duration = random.randint(120, 180)
+    for _ in range(count):
+        offset = random.uniform(0, duration)
+        timestamp = start_time + timedelta(seconds=offset)
+        value = random.randint(1000, 5000)
+        log = (
+            timestamp, "ERROR", "APIGateway", "REQUEST_TIMEOUT",
+            f"API request timed out | value={value}", value
         )
+        logs.append(log)
+    logs.sort(key=lambda log: log[0])
+    return logs
 
-
-    with open("raw_logs.txt", "w") as file:
-
-        for log in logs:
-
-            formatted_log = format_log(log)
-
-            file.write(formatted_log + "\n")
-
-    print("Generated 500 logs.")
-    print("Saved to raw_logs.txt")
-
-    def inject_spike(start_time):
-
-        logs = []
-
-        count = random.randint(40, 60)
-
-        duration = random.randint(120, 180)
-
-        for _ in range(count):
-
-            offset = random.uniform(0, duration)
-
-            timestamp = start_time + timedelta(
-            seconds=offset
-            )
-
-            value = random.randint(1000, 5000)
-
-            log = (
-            timestamp,
-            "ERROR",
-            "APIGateway",
-            "REQUEST_TIMEOUT",
-            f"API request timed out | value={value}",
-            value
-         )
-
-            logs.append(log)
-
-        logs.sort(key=lambda log: log[0])
-
-        return logs
-
-
-if __name__ == "__main__":
-
-    start_time = datetime(
-        2026,
-        9,
-        11,
-        14,
-        30,
-        0
-    )
-
-    # spike_logs = inject_spike(start_time)
-
-    # print("Number of spike logs:", len(spike_logs))
-
-    # for log in spike_logs:
-    #     print(log)
 
 def inject_gradual_degradation(start_time):
 
@@ -236,22 +163,6 @@ def inject_gradual_degradation(start_time):
     logs.append(deadlock_log)
 
     return logs
-
-start_time = datetime(
-    2026,
-    9,
-    11,
-    14,
-    30,
-    0
-)
-
-degradation_logs = inject_gradual_degradation(start_time)
-
-#print("Number of degradation logs:", len(degradation_logs))
-
-# for log in degradation_logs:
-#     print(log)
 
 
 def inject_cascading_failure(start_time):
@@ -334,22 +245,6 @@ def inject_cascading_failure(start_time):
 
     return logs
 
-start_time = datetime(
-    2026,
-    9,
-    11,
-    15,
-    0,
-    0
-)
-
-cascade_logs = inject_cascading_failure(start_time)
-
-# print("Number of cascade logs:", len(cascade_logs))
-
-# for log in cascade_logs:
-#     print(log)
-
 
 def inject_retry_loop(start_time):
     logs = []
@@ -394,21 +289,6 @@ def inject_retry_loop(start_time):
 
     return logs
 
-start_time = datetime(
-    2026,
-    9,
-    11,
-    15,
-    30,
-    0
-)
-
-retry_logs = inject_retry_loop(start_time)
-
-# print("Number of retry logs:", len(retry_logs))
-
-# for log in retry_logs:
-#     print(log)
 
 def inject_silent_failure(start_time):
 
@@ -422,104 +302,96 @@ def inject_silent_failure(start_time):
         "type": "silent_failure"
     }
 
-start_time = datetime(
-    2026,
-    9,
-    11,
-    16,
-    0,
-    0
-)
-
-silent_failure = inject_silent_failure(start_time)
-
-print("Silent failure:")
-print(silent_failure)
-
 
 
 def generate_full_timeline():
 
     start_time = datetime(2026, 9, 11, 0, 0, 0)
-
     end_time = start_time + timedelta(hours=24)
-
     silent_time = start_time + timedelta(hours=20)
 
     logs = []
-    silent_periods = []
+    ground_truth = []
 
     current_time = start_time
 
     while current_time < end_time:
-
         if silent_time <= current_time < silent_time + timedelta(minutes=5):
-            current_time += timedelta(
-                seconds=random.uniform(1, 3)
-            )
+            current_time += timedelta(seconds=random.uniform(1, 3))
             continue
 
         log = generate_baseline_log(current_time)
         logs.append(log)
+        current_time += timedelta(seconds=random.uniform(1, 3))
 
-        current_time += timedelta(
-            seconds=random.uniform(1, 3)
-        )
-
-    # Generate anomaly injectors
     spike_time = start_time + timedelta(hours=2, minutes=30)
     degradation_time = start_time + timedelta(hours=7)
     cascade_time = start_time + timedelta(hours=11, minutes=30)
     retry_time = start_time + timedelta(hours=16)
 
-    logs.extend(inject_spike(spike_time))
-    logs.extend(inject_gradual_degradation(degradation_time))
-    logs.extend(inject_cascading_failure(cascade_time))
-    logs.extend(inject_retry_loop(retry_time))
+    spike_logs = inject_spike(spike_time)
+    logs.extend(spike_logs)
+    ground_truth.append({
+        "type": "spike",
+        "start": min(l[0] for l in spike_logs),
+        "end": max(l[0] for l in spike_logs)
+    })
+
+    degradation_logs = inject_gradual_degradation(degradation_time)
+    logs.extend(degradation_logs)
+    ground_truth.append({
+        "type": "gradual_degradation",
+        "start": min(l[0] for l in degradation_logs),
+        "end": max(l[0] for l in degradation_logs)
+    })
+
+    cascade_logs = inject_cascading_failure(cascade_time)
+    logs.extend(cascade_logs)
+    ground_truth.append({
+        "type": "cascading_failure",
+        "start": min(l[0] for l in cascade_logs),
+        "end": max(l[0] for l in cascade_logs)
+    })
+
+    retry_logs = inject_retry_loop(retry_time)
+    logs.extend(retry_logs)
+    ground_truth.append({
+        "type": "retry_loop",
+        "start": min(l[0] for l in retry_logs),
+        "end": max(l[0] for l in retry_logs)
+    })
 
     silent_failure = inject_silent_failure(silent_time)
-    silent_periods.append(silent_failure)
+    ground_truth.append(silent_failure) 
 
     logs.sort(key=lambda x: x[0])
 
-    return logs, silent_periods
+    return logs, ground_truth
 
 if __name__ == "__main__":
 
-    logs, silent_periods = generate_full_timeline()
+    import json
+
+    logs, ground_truth = generate_full_timeline()
+
+    with open("raw_logs.txt", "w") as file:
+        for log in logs:
+            file.write(format_log(log) + "\n")
+
+    with open("ground_truth.json", "w") as file:
+        json.dump(
+            [
+                {
+                    "type": g["type"],
+                    "start": g["start"].isoformat(),
+                    "end": g["end"].isoformat()
+                }
+                for g in ground_truth
+            ],
+            file,
+            indent=2
+        )
 
     print("Total logs:", len(logs))
-    print("Silent periods:", silent_periods)
-
-    # Count important injected events
-    spike_count = sum(
-        1 for log in logs
-        if log[3] == "REQUEST_TIMEOUT"
-    )
-
-    deadlock_count = sum(
-        1 for log in logs
-        if log[3] == "DB_DEADLOCK"
-    )
-
-    connection_lost_count = sum(
-        1 for log in logs
-        if log[3] == "DB_CONN_LOST"
-    )
-
-    service_unavailable_count = sum(
-        1 for log in logs
-        if log[3] == "SERVICE_UNAVAILABLE"
-    )
-
-    retry_exhausted_count = sum(
-        1 for log in logs
-        if log[3] == "RETRY_EXHAUSTED"
-    )
-
-    print("\nInjected anomaly counts:")
-    print("REQUEST_TIMEOUT:", spike_count)
-    print("DB_DEADLOCK:", deadlock_count)
-    print("DB_CONN_LOST:", connection_lost_count)
-    print("SERVICE_UNAVAILABLE:", service_unavailable_count)
-    print("RETRY_EXHAUSTED:", retry_exhausted_count)
+    print("Saved raw logs to raw_logs.txt")
+    print("Saved ground truth to ground_truth.json")
