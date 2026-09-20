@@ -67,7 +67,7 @@ def get_critical_count(conn, window_start, window_end):
 
     return cursor.fetchone()[0]
 
-def get_average_value(conn, window_start, window_end):
+def get_avg_value_for_event(conn, window_start, window_end, event_type):
     cursor = conn.cursor()
 
     cursor.execute("""
@@ -75,10 +75,12 @@ def get_average_value(conn, window_start, window_end):
         FROM parsed_logs
         WHERE timestamp >= ?
         AND timestamp < ?
+        AND event_type = ?
         AND value IS NOT NULL
     """, (
         window_start.isoformat(),
-        window_end.isoformat()
+        window_end.isoformat(),
+        event_type
     ))
 
     result = cursor.fetchone()[0]
@@ -89,34 +91,39 @@ def get_average_value(conn, window_start, window_end):
     return result
 
 def extract_features(conn, window_start, window_end):
-    log_count = get_log_count(
+    log_count = get_log_count(conn, window_start, window_end)
+    error_count = get_error_count(conn, window_start, window_end)
+    warning_count = get_warning_count(conn, window_start, window_end)
+    critical_count = get_critical_count(conn, window_start, window_end)
+
+    avg_db_slow_query = get_avg_value_for_event(
         conn,
         window_start,
-        window_end
+        window_end,
+        "DB_SLOW_QUERY"
     )
 
-    error_count = get_error_count(
+    avg_high_latency = get_avg_value_for_event(
         conn,
         window_start,
-        window_end
+        window_end,
+        "HIGH_LATENCY"
     )
 
-    warning_count = get_warning_count(
-        conn,
-        window_start,
-        window_end
+    api_gateway_count = get_module_log_count(
+        conn, window_start, window_end, "APIGateway"
     )
 
-    critical_count = get_critical_count(
-        conn,
-        window_start,
-        window_end
+    auth_service_count = get_module_log_count(
+        conn, window_start, window_end, "AuthService"
     )
 
-    average_value = get_average_value(
-        conn,
-        window_start,
-        window_end
+    database_service_count = get_module_log_count(
+        conn, window_start, window_end, "DatabaseService"
+    )
+
+    system_service_count = get_module_log_count(
+        conn, window_start, window_end, "SystemService"
     )
 
     return [
@@ -124,7 +131,12 @@ def extract_features(conn, window_start, window_end):
         error_count,
         warning_count,
         critical_count,
-        average_value
+        avg_db_slow_query,
+        avg_high_latency,
+        api_gateway_count,
+        auth_service_count,
+        database_service_count,
+        system_service_count
     ]
 
 def generate_windows(start_time, end_time, window_minutes=5):
@@ -168,6 +180,23 @@ def build_feature_dataset(conn, start_time, end_time):
 
     return dataset
 
+def get_module_log_count(conn, window_start, window_end, module):
+    cursor = conn.cursor()
+
+    cursor.execute("""
+        SELECT COUNT(*)
+        FROM parsed_logs
+        WHERE timestamp >= ?
+        AND timestamp < ?
+        AND module = ?
+    """, (
+        window_start.isoformat(),
+        window_end.isoformat(),
+        module
+    ))
+
+    return cursor.fetchone()[0]
+
 if __name__ == "__main__":
     import sqlite3
 
@@ -181,6 +210,21 @@ if __name__ == "__main__":
         start_time,
         end_time
     )
+
+    for row in dataset:
+        if row["window_start"] == datetime(2026, 9, 11, 20, 0, 0):
+         print("\nSilent failure window:")
+         print(row)
+
+    for row in dataset:
+        if row["window_start"] == datetime(2026, 9, 11, 7, 0, 0):
+            print("\nDegradation window (start):", row)
+        if row["window_start"] == datetime(2026, 9, 11, 7, 15, 0):
+            print("Degradation window (later):", row)
+
+    for row in dataset:
+        if row["window_start"] == datetime(2026, 9, 11, 2, 30, 0):
+            print("\nSpike window:", row)
 
     print("Number of windows:", len(dataset))
 
