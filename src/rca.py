@@ -2,6 +2,10 @@ from datetime import datetime
 import os
 from openai import OpenAI
 from dotenv import load_dotenv
+from streamlit import json
+import json
+
+from detector import run_detection
 
 
 load_dotenv()
@@ -12,20 +16,33 @@ client = OpenAI(
 )
 
 
-def test_llm_connection():
+def generate_rca(prompt):
     response = client.chat.completions.create(
         model="nvidia/nemotron-3.5-lightning-30b-a3b",
         messages=[
             {
+                "role": "system",
+                "content": (
+                    "You are a system log analysis assistant. "
+                    "Return only the final RCA answer. "
+                    "Do not output reasoning, thinking, or analysis traces."
+                )
+            },
+            {
                 "role": "user",
-                "content": "Reply with: Connection successful"
+                "content": prompt
             }
         ],
         temperature=0.2,
-        max_tokens=20
+        max_tokens=800,
+        extra_body={
+            "chat_template_kwargs": {
+                "enable_thinking": False
+            }
+        }
     )
 
-    print(response.choices[0].message.content)
+    return response.choices[0].message.content
 
 def build_context(window_start, window_end, conn):
 
@@ -147,34 +164,60 @@ if __name__ == "__main__":
 
     conn = sqlite3.connect("../data/raw_logs.db")
 
-    window_start = datetime(2026, 9, 11, 2, 30, 0)
-    window_end = datetime(2026, 9, 11, 2, 35, 0)
+    start_time = datetime(2026, 9, 11, 0, 0, 0)
+    end_time = datetime(2026, 9, 12, 0, 0, 0)
 
-    context = build_context(
-        window_start,
-        window_end,
-        conn
+    dataset, predictions, anomalies, anomalies_filtered = run_detection(
+        conn,
+        start_time,
+        end_time
     )
 
-    prompt = build_prompt(context)
+    print("\n--- DETECTED ANOMALOUS WINDOWS FOR RCA ---")
 
-    print("\n--- LLM PROMPT ---")
-    print(prompt)
+    for anomaly in anomalies_filtered:
+        print(
+            anomaly["window_start"],
+            "→",
+            anomaly["window_end"],
+            "score =",
+            anomaly["score"]
+        )
+
+    # Store all RCA results here
+    rca_results = []
+
+    # Generate RCA for every detected anomaly
+    for i, anomaly in enumerate(anomalies_filtered, start=1):
+
+        window_start = anomaly["window_start"]
+        window_end = anomaly["window_end"]
+
+        context = build_context(
+            window_start,
+            window_end,
+            conn
+        )
+
+        prompt = build_prompt(context)
+
+        rca_result = generate_rca(prompt)
+
+        print(f"\n--- RCA RESULT {i} ---")
+        print(rca_result)
+
+        # Add this RCA to the results list
+        rca_results.append({
+            "window_start": window_start.isoformat(),
+            "window_end": window_end.isoformat(),
+            "anomaly_score": anomaly["score"],
+            "rca": rca_result
+        })
+
+    # Save all RCA results to one JSON file
+    with open("../data/rca_results.json", "w") as f:
+        json.dump(rca_results, f, indent=4)
+
+    print("\nRCA results saved to ../data/rca_results.json")
 
     conn.close()
-
-    test_llm_connection()
-
-    print("Log count:", context["log_count"])
-
-    print("\nSeverity counts:")
-    print(context["severity_counts"])
-
-    print("\nModules:")
-    print(context["modules"])
-
-    print("\nEvent types:")
-    print(context["event_types"])
-
-    print("\nLog excerpt:")
-    print(context["log_lines"])

@@ -95,6 +95,31 @@ def count_false_positives(anomalies_filtered, ground_truth):
 
     return false_positives
 
+def run_detection(conn, start_time, end_time):
+    from features import build_feature_dataset
+
+    dataset = build_feature_dataset(conn, start_time, end_time)
+
+    model = create_model()
+    model = train_model(model, dataset)
+
+    predictions = detect_anomalies(model, dataset)
+
+    scores = get_anomaly_scores(model, dataset)
+
+    anomalies = get_anomalous_windows(
+        dataset,
+        predictions,
+        scores
+    )
+
+    anomalies_filtered = [
+        a for a in anomalies
+        if a["score"] < -0.02
+    ]
+
+    return dataset, predictions, anomalies, anomalies_filtered
+
 if __name__ == "__main__":
     import sqlite3
     from datetime import datetime
@@ -106,36 +131,11 @@ if __name__ == "__main__":
     start_time = datetime(2026, 9, 11, 0, 0, 0)
     end_time = datetime(2026, 9, 12, 0, 0, 0)
 
-    dataset = build_feature_dataset(
-        conn,
-        start_time,
-        end_time
+    dataset, predictions, anomalies, anomalies_filtered = run_detection(
+    conn,
+    start_time,
+    end_time
     )
-
-    model = create_model()
-
-    model = train_model(
-        model,
-        dataset
-    )
-
-    predictions = detect_anomalies(
-    model,
-    dataset
-    )
-
-    scores = get_anomaly_scores(model, dataset)
-
-    anomalies = get_anomalous_windows(
-    dataset,
-    predictions,
-    scores
-    )
-
-    anomalies_filtered = [
-    a for a in anomalies
-    if a["score"] < -0.02
-]
 
     print("\nAnomalous windows:")
 
